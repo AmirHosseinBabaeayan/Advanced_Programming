@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Tura.Controls.TuringConditionItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:res="clr-namespace:Tura.Properties"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tura.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="200" Padding="0,0,0,10">
+    <Grid Background="White">
+        <TextBox MaxLength="1" Name="ConditionTextBox" Margin="0,0,132,0" TextChanged="ConditionTextBox_TextChanged" Background="{Binding Source={x:Static res:Settings.Default}, Path=BackColor}" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+        <TextBox MaxLength="1" Name="ReplacingConditionTextBox" Margin="67,0,58,0" TextChanged="ReplacingConditionTextBox_TextChanged" Background="{Binding Source={x:Static res:Settings.Default}, Path=BackColor}" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+        <ComboBox Name="TransitionComboBox" Margin="140,0,0,0" SelectionChanged="TransitionComboBox_SelectionChanged" Background="{Binding Source={x:Static res:Settings.Default}, Path=BackColor}" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}">
+            <ComboBoxItem Content="Left" Background="{Binding Source={x:Static res:Settings.Default}, Path=Accent}" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+            <ComboBoxItem Content="Right" Background="{Binding Source={x:Static res:Settings.Default}, Path=Accent}" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+        </ComboBox>
+    </Grid>
+</UserControl>

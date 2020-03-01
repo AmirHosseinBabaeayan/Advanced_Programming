@@ -1,0 +1,15 @@
+------------- user information -------------
+identity: 9712358032
+username: libertyindeath21
+full name: پوریا فتحی
+email address: libertyindeath21@gmail.com
+------------- result -------------
+problem name: مسابقه جیگر و ببعی
+state: آپلود شد
+short judge result: داوری نشده
+penalty: 100%
+judge score: 0
+judge score with delay: 0
+instructor score: not set yet.
+------------- judge log -------------
+

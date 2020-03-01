@@ -1,0 +1,29 @@
+﻿<Window x:Class="Tura.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:res="clr-namespace:Tura.Properties"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tura"
+        mc:Ignorable="d"
+        Title="Tura Settings" Height="300" Width="500">
+    <Grid Background="{Binding Source={x:Static res:Settings.Default}, Path=BackColor}">
+        <GroupBox Height="100" VerticalAlignment="Top" Margin="10,10,10,10" Header="Theme" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}">
+            <Grid>
+                <TextBlock VerticalAlignment="Top" Text="Choose how the program looks like:" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+                <RadioButton VerticalAlignment="Top" Name="DarkThemeRadioButton" Margin="20,35,0,0" Content="Dark" Width="75" HorizontalAlignment="Left" Checked="DarkThemeRadioButton_Checked" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+                <RadioButton VerticalAlignment="Top" Name="LightThemeRadioButton" Margin="100,35,0,0" Content="Light" Width="80" HorizontalAlignment="Left" Checked="LightThemeRadioButton_Checked" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+            </Grid>
+
+        </GroupBox>
+        
+        <GroupBox Height="130" VerticalAlignment="Top" Margin="10,120,10,10" Header="Activation" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}">
+            <Grid>
+                <TextBlock Text="Enter the activation key to enable pro features of this program:" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}"/>
+                <TextBox Name="ActivationKeyTextBox" Background="White" Height="25" Margin="10,10,10,10" TextChanged="ActivationKeyTextBox_TextChanged"/>
+                <Button Name="ActivateButton" Width="100" Height="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Content="Activate" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}" Background="{Binding Source={x:Static res:Settings.Default}, Path=BackColor}" Click="ActivateButton_Click"/>
+            </Grid>
+        </GroupBox>
+        
+    </Grid>
+</Window>

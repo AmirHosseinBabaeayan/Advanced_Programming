@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="Tura.Controls.VertexControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tura.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="100" Width="100" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Grid>
+        <Ellipse Name="MainEllipse"  Width="100" Height="100" Stroke="Black" Fill="LightGray" StrokeThickness="2" MouseDown="MainEllipse_MouseDown">
+
+            <Ellipse.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Connect to" Click="ConnectTo_Click"/>
+                    <MenuItem Header="Delete" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="Rename" Click="MenuItem_Click"/>
+                    <MenuItem Header="Change Start State" Click="MenuItem_Click_3"/>
+                    <MenuItem Header="Change Finish State" Click="MenuItem_Click_2"/>
+                </ContextMenu>
+            </Ellipse.ContextMenu>
+
+        </Ellipse>
+
+
+
+        <Ellipse Visibility="Collapsed" Name="FinishStateVisual" Width="90" Height="90" Stroke="Black" Fill="LightGray" StrokeThickness="2" MouseDown="MainEllipse_MouseDown">
+            <Ellipse.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Connect to" Click="ConnectTo_Click"/>
+                    <MenuItem Header="Delete" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="Rename" Click="MenuItem_Click"/>
+                    <MenuItem Header="Change Start State" Click="MenuItem_Click_3"/>
+                    <MenuItem Header="Change Finish State" Click="MenuItem_Click_2"/>
+                </ContextMenu>
+            </Ellipse.ContextMenu>
+
+
+        </Ellipse>
+
+        <Ellipse Visibility="Collapsed" Name="StartStateVisual" Width="80" Height="80" Stroke="Black" Fill="LightGray" StrokeThickness="2" MouseDown="MainEllipse_MouseDown">
+            <Ellipse.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Connect to" Click="ConnectTo_Click"/>
+                    <MenuItem Header="Delete" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="Rename" Click="MenuItem_Click"/>
+                    <MenuItem Header="Change Start State" Click="MenuItem_Click_3"/>
+                    <MenuItem Header="Change Finish State" Click="MenuItem_Click_2"/>
+                </ContextMenu>
+            </Ellipse.ContextMenu>
+        </Ellipse>
+
+        <TextBlock Name="NameTextBlock" Text="V" VerticalAlignment="Center" Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="100" MouseDown="NameTextBlock_MouseDown"/>
+        <TextBox Name="NameTextBox" Foreground="Black" Visibility="Collapsed" VerticalAlignment="Center" TextAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="100" TextChanged="NameTextBox_TextChanged" LostFocus="NameTextBox_LostFocus"/>
+
+    </Grid>
+</UserControl>

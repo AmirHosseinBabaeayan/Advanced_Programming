@@ -1,0 +1,65 @@
+﻿<Window x:Class="Tura.Intro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tura"
+        mc:Ignorable="d"
+        Title="Intro" Height="300" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Topmost="True">
+    <Grid>
+        <Rectangle Stroke="Gray" StrokeThickness="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0">
+                    <GradientStop Color="Black" x:Name="LightGradient" Offset="2"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+            <Rectangle.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="LightGradient" Storyboard.TargetProperty="Offset" From="2" To="5" Duration="0:0:2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Rectangle.Triggers>
+            
+        </Rectangle>
+
+        <Line x:Name="TitleLine" X1="0" X2="600" Y1="105" Y2="105" Stroke="Black" StrokeThickness="1" HorizontalAlignment="Left">
+            <Line.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="TitleLine" Storyboard.TargetProperty="Width" From="0" To="600" Duration="0:0:1.7"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Line.Triggers>
+        </Line>
+        <TextBlock x:Name="Title" FontSize="52" Text="TURA" Foreground="Black" Margin="10,50,0,0" Width="150" Height="55" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0">
+            <TextBlock.RenderTransform>
+                <TranslateTransform x:Name="TitleTrans"/>
+            </TextBlock.RenderTransform>
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Title" Storyboard.TargetProperty="Opacity">
+                                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:1"/>
+                                <LinearDoubleKeyFrame Value="1" KeyTime="0:0:2"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="TitleTrans" Storyboard.TargetProperty="X">
+                                <LinearDoubleKeyFrame Value="-10" KeyTime="0:0:1"/>
+                                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:1.3"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </TextBlock.Triggers>
+        </TextBlock>
+
+    </Grid>
+</Window>

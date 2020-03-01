@@ -1,0 +1,36 @@
+﻿<Window x:Class="Tura.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:res="clr-namespace:Tura.Properties"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tura"
+        mc:Ignorable="d"
+        Title="Tura" Height="450" Width="800">
+    <Grid >
+        <Menu DockPanel.Dock="Top" Panel.ZIndex="1" Background="{Binding Source={x:Static res:Settings.Default}, Path=Accent}" Foreground="{Binding Source={x:Static res:Settings.Default}, Path=ForeColor}" BorderBrush="Black" OpacityMask="Black">
+            <MenuItem Header="_File" Background="{Binding Source={x:Static res:Settings.Default}, Path=Accent}">
+                <MenuItem Header="_New Project" Click="NewProjectMenuItem_Click" Foreground="Black"/>
+                <MenuItem Header="_Open Project" Click="OpenProjectMenuItem_Click" Foreground="Black"/>
+                <MenuItem Header="_Save Project" Name="SaveProjectMenuItem" Click="SaveProjectMenuItem_Click" Foreground="Black"/>
+                <MenuItem Header="Save _As" Name="SaveAsMenuItem" Click="SaveProjectMenuItem_Click" Foreground="Black"/>
+                <MenuItem Header="_Close Project" Name="CloseProjectMenuItem" Click="CloseProjectMenuItem_Click"  Foreground="Black"/>
+            </MenuItem>
+
+            <MenuItem Header="_Machine" Name="MachineMenu" Background="{Binding Source={x:Static res:Settings.Default}, Path=Accent}">
+                <MenuItem Header="Create" Foreground="Black">
+                    <MenuItem Header="DFA Machine" Click="MenuItem_Click" Foreground="Black"  Name="AddDFAMachineMenuItem"/>
+                    <MenuItem Header="Turing Machine" Click="MenuItem_Click" Foreground="Black" Name="AddTuringMachineMenuItem"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Tools" Background="{Binding Source={x:Static res:Settings.Default}, Path=Accent}">
+                <MenuItem Header="Settings" Foreground="Black" Name="SettingsMenuItem" Click="SettingsMenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <ScrollViewer  Margin="0,20,0,20" Background="White" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Panel.ZIndex="2" Name="MainPanel">
+            <Grid Name="MachinesGrid" Background="{Binding Source={x:Static res:Settings.Default}, Path=BackColor}">
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+    
+</Window>

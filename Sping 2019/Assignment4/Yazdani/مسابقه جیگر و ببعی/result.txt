@@ -1,0 +1,16 @@
+------------- user information -------------
+identity: 9712358046
+username: ali346
+full name: محسن یزدانی
+email address: alimohammadi340@gmail.com
+------------- result -------------
+problem name: مسابقه جیگر و ببعی
+state: آپلود شد
+short judge result: داوری نشده
+penalty: 100%
+judge score: 0
+judge score with delay: 0
+instructor score: 10
+instructor score with delay: 10
+------------- judge log -------------
+

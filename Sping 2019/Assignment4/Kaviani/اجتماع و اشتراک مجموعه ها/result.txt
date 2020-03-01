@@ -1,0 +1,26 @@
+------------- user information -------------
+identity: 9712358032
+username: libertyindeath21
+full name: پوریا فتحی
+email address: libertyindeath21@gmail.com
+------------- result -------------
+problem name: اجتماع و اشتراک مجموعه ها
+state: داوری شد
+short judge result: کامپایل شد
+penalty: 100%
+judge score: 0
+judge score with delay: 0
+instructor score: not set yet.
+------------- judge log -------------
+
+Starting tester...
+type = compile-only
+Compiling as cpp
+Enabling EasySandbox
+EasySandbox is not built. Disabling EasySandbox...
+Enabling Shield For C/C++
+Compiled. Exit Code=0  Execution Time: 412 ms
+Compiled Successfully
+
+Total Execution Time: 468 ms
+

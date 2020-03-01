@@ -1,0 +1,83 @@
+this program written by @pooria fathi@
+
+usage:
+at first main frame you have two choice
+1)DFA machine
+2)Touring machine
+
+
+DFA machine is free :)
+DFA:
+
+there is 4 main button on screen that named "node","edge","delete","non".
+
+node= use this btn to insert node.
+when you click on node btn it will activate for you so you can click mouse in every place on screen
+to add node.
+when your node is blue its means they are in normal node(ordinary states)
+when nodes are green it means that node can be start state
+when nodes are red with bold dark strok it means that node is a final state
+when nodes are purpel it means that node is both start state and final state.
+
+edge= use to determine relation between states(node).
+if there is node on screen you can press left mouse button on yellow are of nodes and drag to circle area of another node
+to hava edge between this two node if you only click on yellow area it will make edge from a node to itself.
+when you draw edge a input box appear that can read only one character if you enter more letter input box 
+will read only first character of letter.
+
+delete= use to delete nodes and edges.
+if you wanna to delete node is so simple its enough to click on delete btn and click on yellow are of node
+and node will deleted and also edges from or to thats node will clear.
+if you wanna to delete edges it enough to click on first character of edge name and then input box will appear
+and you can input your custom edge name and press ok then edge will deleted.
+
+non= use to change type of state.
+if you click non then you can change states type(e.x "final","start","both") its enough to have right click on yellow area of
+nodes and cheecked the boxes.
+
+there is two menue on top right of screen was named "file","help".
+
+file : there is six button wich indexed in below:
+
+1)open : use for open saved machine.
+causion : you can only use this option at first of program it means if you insert node on screen this btn will be disactivate.
+if click on open you can open machin that saves as json easily.
+
+2)save : use for save machine.
+you can save your desined machine as json file.
+when you click a file chooser will appera that you can choose your custom directory.
+
+3)F Run : use for fast run of machine.
+if there is start node on screen this option is activate for you.
+if click input box will appear you can input the machines input then you must insert start node number(maybe there is more than one start state)
+then result will show.
+
+4)multi input run : you can input more than one input then shown result of all of them at same time.
+if you click a panel will open for you , you can click on "+" btn to add text field and "-" btn to remove last text field then wite all 
+your inputs on test fields the click "run" btn to show all result.
+
+5)Run : use for run with proccess.
+if there is at least one start state on screen this option will activate for you.
+if click input box will appear that must input number of node that is start state then another input box will appear
+that you can enter your input and then a panel will appear that you can press "next" btn to see next state and
+when result is accept on top of panel will wirite that phrase with green color and reject is so with red color.
+
+6)save as image : use for save machine as png.
+if click you can choose your custom directory and pick custom name for your pic.
+
+*******************************************
+*******************************************
+*******************************************
+*******************************************
+*******************************************
+
+Touring machine :
+
+to activate touring machine you must insert serial number.
+
+touring machine usage is like dfa with little difference that are:
+
+1)edge btn: you must insert string at least 3 character in input box.----->so on for edge deletion
+
+
+

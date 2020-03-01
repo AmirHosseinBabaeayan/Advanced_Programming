@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/32x32.png</file>
+        <file>img/left-and-right-arrow.png</file>
+        <file>img/noun_Delete_5493.png</file>
+        <file>img/iconfinder_add_134224.png</file>
+        <file>img/Tatice-Cristal-Intense-Ok.ico</file>
+        <file>img/cancel-512.png</file>
+        <file>img/broom_clean_clear_sweep_housework_dust-512.png</file>
+        <file>img/207-512.png</file>
+        <file>img/9e15c8aa9d.png</file>
+        <file>img/2873-200.png</file>
+        <file>img/7820ed1b8b.svg</file>
+        <file>img/button.jpg</file>
+        <file>img/newButtons/newButtons/5.png</file>
+        <file>img/newButtons/newButtons/4.png</file>
+        <file>img/newButtons/newButtons/3.png</file>
+        <file>img/newButtons/newButtons/2.png</file>
+        <file>img/newButtons/newButtons/1.png</file>
+        <file>img/buttons/PressedButton.png</file>
+        <file>img/buttons/HoverButton.png</file>
+        <file>img/890784-200.png</file>
+        <file>img/Delete.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

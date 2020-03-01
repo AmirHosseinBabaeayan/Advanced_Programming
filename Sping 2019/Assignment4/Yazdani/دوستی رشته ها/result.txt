@@ -1,0 +1,27 @@
+------------- user information -------------
+identity: 9712358046
+username: ali346
+full name: محسن یزدانی
+email address: alimohammadi340@gmail.com
+------------- result -------------
+problem name: دوستی رشته ها
+state: داوری شد
+short judge result: کامپایل شد
+penalty: 100%
+judge score: 0
+judge score with delay: 0
+instructor score: 10
+instructor score with delay: 10
+------------- judge log -------------
+
+Starting tester...
+type = compile-only
+Compiling as cpp
+Enabling EasySandbox
+EasySandbox is not built. Disabling EasySandbox...
+Enabling Shield For C/C++
+Compiled. Exit Code=0  Execution Time: 536 ms
+Compiled Successfully
+
+Total Execution Time: 593 ms
+
